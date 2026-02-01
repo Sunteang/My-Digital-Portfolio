@@ -1,0 +1,221 @@
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/500.css";
+@import "@fontsource/playfair-display/600.css";
+@import "@fontsource/playfair-display/700.css";
+@import "@fontsource/dm-sans/400.css";
+@import "@fontsource/dm-sans/500.css";
+@import "@fontsource/dm-sans/600.css";
+@import "@fontsource/dm-sans/700.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+ * Design System: Editorial Portfolio Theme
+ * A warm, sophisticated design with terracotta accents
+ * All colors are HSL for consistency
+ */
+
+@layer base {
+  :root {
+    /* Core palette - Warm cream and charcoal */
+    --background: 40 33% 98%;
+    --foreground: 220 20% 15%;
+
+    /* Card surfaces */
+    --card: 40 30% 96%;
+    --card-foreground: 220 20% 15%;
+
+    /* Popover */
+    --popover: 40 33% 98%;
+    --popover-foreground: 220 20% 15%;
+
+    /* Primary - Deep charcoal */
+    --primary: 220 20% 15%;
+    --primary-foreground: 40 33% 98%;
+
+    /* Secondary - Soft warm gray */
+    --secondary: 30 15% 92%;
+    --secondary-foreground: 220 20% 25%;
+
+    /* Muted elements */
+    --muted: 30 10% 90%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Accent - Warm terracotta/coral */
+    --accent: 15 70% 55%;
+    --accent-foreground: 40 33% 98%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 40 33% 98%;
+
+    /* Borders and inputs */
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 15 70% 55%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar-background: 40 30% 96%;
+    --sidebar-foreground: 220 20% 25%;
+    --sidebar-primary: 15 70% 55%;
+    --sidebar-primary-foreground: 40 33% 98%;
+    --sidebar-accent: 30 15% 92%;
+    --sidebar-accent-foreground: 220 20% 15%;
+    --sidebar-border: 30 15% 88%;
+    --sidebar-ring: 15 70% 55%;
+
+    /* Custom design tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(15 70% 55% / 0.1) 0%, hsl(40 33% 98%) 50%, hsl(220 20% 15% / 0.05) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(40 30% 96%) 0%, hsl(40 33% 98%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(15 70% 55%) 0%, hsl(25 80% 60%) 100%);
+    
+    --shadow-sm: 0 2px 8px hsl(220 20% 15% / 0.04);
+    --shadow-md: 0 4px 16px hsl(220 20% 15% / 0.06);
+    --shadow-lg: 0 8px 32px hsl(220 20% 15% / 0.08);
+    --shadow-glow: 0 0 40px hsl(15 70% 55% / 0.15);
+
+    /* Typography */
+    --font-heading: "Playfair Display", Georgia, serif;
+    --font-body: "DM Sans", system-ui, sans-serif;
+
+    /* Transitions */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 40 20% 95%;
+
+    --card: 220 18% 13%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 40 20% 95%;
+    --primary-foreground: 220 20% 10%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 40 20% 90%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 40 10% 60%;
+
+    --accent: 15 70% 55%;
+    --accent-foreground: 40 33% 98%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 40 33% 98%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 15 70% 55%;
+
+    --sidebar-background: 220 18% 12%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 15 70% 55%;
+    --sidebar-primary-foreground: 40 33% 98%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 40 20% 95%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 15 70% 55%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(15 70% 55% / 0.1) 0%, hsl(220 20% 10%) 50%, hsl(40 20% 95% / 0.02) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(220 18% 13%) 0%, hsl(220 20% 11%) 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    @apply tracking-tight;
+  }
+}
+
+@layer components {
+  /* Page transition wrapper */
+  .page-transition {
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+
+  /* Skill bar animation */
+  .skill-bar {
+    animation: growWidth 1s ease-out forwards;
+    animation-delay: 0.3s;
+    transform-origin: left;
+    width: 0;
+  }
+
+  /* Floating animation for decorative elements */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Gradient text effect */
+  .gradient-text {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--skill-level, 100%);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
