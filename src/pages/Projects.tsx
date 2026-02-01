@@ -79,6 +79,14 @@ const Projects = () => {
       image: "https://serey-sunteang.vercel.app/portfolio/car-garage-web.JPEG",
       githubUrl: "https://github.com/Sunteang/OverRev_CarGarage-Laravel.git",
     },
+    {
+      title: "PC Shop - Technology E-commerce Website",
+      description:
+        "PC Shop is a full-featured online computer store that allows customers to purchase computers and accessories with confidence in product quality and service. The platform also provides computer repair and maintenance services, enabling users to submit repair requests and track the progress of their purchases or repairs in real time. Designed as a web-based system, PC Shop focuses on usability, transparency, and a smooth online shopping experience.",
+      technologies: ["Laravel", "PHP", "MySQL", "Tailwind CSS"],
+      image: "https://i.pinimg.com/736x/a5/5b/b9/a55bb903939c3d28db2bb5412032339e.jpg",
+      githubUrl: "https://github.com/Sunteang/PC-Shop-Laravel.git",
+    },
   ];
 
   return (
