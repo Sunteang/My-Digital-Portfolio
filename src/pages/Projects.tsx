@@ -27,7 +27,7 @@ const Projects = () => {
       technologies: ["React.js", "Next.js", "TypeScript", "Framer Motion", "Tailwind CSS"],
       image: "https://i.pinimg.com/736x/c5/f5/76/c5f5762d6e76ef2901e7443a9d187a39.jpg",
       githubUrl: "https://github.com/Sunteang/My-Digital-Showcase.git",
-      liveUrl: "https://sunteang.vercel.app/",
+      liveUrl: "https://serey-sunteang.vercel.app/",
     },
     {
       title: "Lomnov Real Estate",
