@@ -48,6 +48,15 @@ const Projects = () => {
       liveUrl: "https://ti-lomnov.onrender.com/admin",
     },
     {
+      title: "JobRecruiter - Job Search Platform",
+      description:
+      "JobRecruiter is a comprehensive job search platform that connects job seekers with employers. It offers features such as job listings, resume building, and application tracking to help users find their ideal job opportunities.",
+      technologies: ["Reactjs", "Tailwindcss", "Vite", "TypeScript", "..."],
+      image: "https://i.pinimg.com/736x/3c/62/46/3c6246033f8c00649f2b0519f1b5a64d.jpg",
+      githubUrl: "https://github.com/Sunteang/JobRecruiter-Platform.git",
+      liveUrl: "https://jobrecruiter.onrender.com",
+    },
+    {
       title: "Innovatech Phnom Penh - University Website",
       description:
       "Innovatech Phnom Penh is a leading university in Cambodia, offering a wide range of academic programs and research opportunities. The website provides information about the university's history, faculties, courses, admissions, and campus life.",
