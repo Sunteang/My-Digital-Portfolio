@@ -30,25 +30,45 @@ const Projects = () => {
       liveUrl: "https://serey-sunteang.vercel.app/",
     },
     {
-      title: "Lomnov Real Estate",
+      title: "Ti-Lomnov Real Estate Platform",
       description:
-      "Lomnov is a trusted real estate provider specializing in buying, selling, renting, and investing in properties. Our team is committed to offering exceptional service, with a focus on transparency, trust, and integrity.",
-      technologies: ["React.js", "Next.js", "TypeScript", "Node.js", "Socket.io", "MongoDB"],
-      image: "https://serey-sunteang.vercel.app/portfolio/lomnov.png",
-      githubUrl: "https://github.com/sabaicode-dev/lomnov.git",
+      "Ti-Lomnov is a trusted real estate provider specializing in buying, selling, renting, and investing in properties. Our team is committed to offering exceptional service, with a focus on transparency, trust, and integrity.",
+      technologies: ["React.js", "Vite", "TypeScript", "Tailwind CSS", "..."],
+      image: "https://i.pinimg.com/736x/af/6f/1d/af6f1dc4e4c320fb1bb1972191e42873.jpg",
+      githubUrl: "https://github.com/Sunteang/Ti-Lomnov-Platform.git",
+      liveUrl: "https://ti-lomnov.onrender.com/",
     },
     {
-      title: "Lomnov Real Estate Dashboard",
+      title: "Ti-Lomnov Real Estate Dashboard",
       description:
-      "Lomnov Dashboard is your one-stop solution for buying, selling, renting, or investing in real estate. It offers property listings, tailored insights, and tools to manage transactions effortlessly.",
-      technologies: ["React.js", "Next.js", "TypeScript", "MongoDB", "Chart.js"],
-      image: "https://serey-sunteang.vercel.app/portfolio/lomnov-dashboard.png",
-      githubUrl: "https://github.com/sabaicode-dev/lomnov.git",
+      "Ti-Lomnov Dashboard is your one-stop solution for buying, selling, renting, or investing in real estate. It offers property listings, tailored insights, and tools to manage transactions effortlessly.",
+      technologies: ["React.js", "Vite", "TypeScript", "Chart.js"],
+      image: "https://i.pinimg.com/736x/ac/6e/ae/ac6eaee9f863f6385ac2da10e1892cf8.jpg",
+      githubUrl: "https://github.com/Sunteang/Ti-Lomnov-Platform.git",
+      liveUrl: "https://ti-lomnov.onrender.com/admin",
+    },
+    {
+      title: "Innovatech Phnom Penh - University Website",
+      description:
+      "Innovatech Phnom Penh is a leading university in Cambodia, offering a wide range of academic programs and research opportunities. The website provides information about the university's history, faculties, courses, admissions, and campus life.",
+      technologies: ["Reactjs", "Tailwindcss", "Vite", "TypeScript", "..."],
+      image: "https://i.pinimg.com/736x/08/84/20/088420af1f7bd2a1888dd374466a7209.jpg",
+      githubUrl: "https://github.com/Sunteang/Innovatech-University.git",
+      liveUrl: "https://innovatech-university.onrender.com/",
+    },
+    {
+      title: "YourHobby - E-commerce Platform",
+      description:
+      "A platform offering a wide range of electronic devices, including smartphones, laptops, desktops, and headphones. It aims to provide customers with the latest gadgets at competitive prices.",
+      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      image: "https://serey-sunteang.vercel.app/portfolio/yourhobby.png",
+      githubUrl: "https://github.com/Sunteang/YourHobby.git",
+      liveUrl: "https://your-hobby.vercel.app/",
     },
     {
       title: "YourStart - Service",
       description:
-        "A project focused on providing clients with market analysis and brand identity development services. It helps businesses gain insights into their markets and create a strong, memorable brand presence.",
+      "A project focused on providing clients with market analysis and brand identity development services. It helps businesses gain insights into their markets and create a strong, memorable brand presence.",
       technologies: ["React", "HTML", "CSS", "JavaScript"],
       image: "https://serey-sunteang.vercel.app/portfolio/yourstart.png",
       githubUrl: "https://github.com/Sunteang/YourStart.git",
@@ -57,19 +77,10 @@ const Projects = () => {
     {
       title: "Wedding Service App",
       description:
-        "The Wedding Service App was created to simplify the process of finding services (e.g., wedding bands, photography, bridal makeup, venues, dresses, florists, decorations). It connects service providers with potential customers efficiently.",
+      "The Wedding Service App was created to simplify the process of finding services (e.g., wedding bands, photography, bridal makeup, venues, dresses, florists, decorations). It connects service providers with potential customers efficiently.",
       technologies: ["Flutter", "Dart", "Firebase"],
       image: "https://serey-sunteang.vercel.app/portfolio/weddingapp.png",
       githubUrl: "https://github.com/Sunteang/Wedding_Service-Flutter_app.git",
-    },
-    {
-      title: "YourHobby - E-commerce Platform",
-      description:
-        "A platform offering a wide range of electronic devices, including smartphones, laptops, desktops, and headphones. It aims to provide customers with the latest gadgets at competitive prices.",
-      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      image: "https://serey-sunteang.vercel.app/portfolio/yourhobby.png",
-      githubUrl: "https://github.com/Sunteang/YourHobby.git",
-      liveUrl: "https://your-hobby.vercel.app/",
     },
     {
       title: "Car Garage Management Website",
