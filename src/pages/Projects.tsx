@@ -57,6 +57,15 @@ const Projects = () => {
       liveUrl: "https://jobrecruiter.onrender.com",
     },
     {
+      title: "SunteangPhone Store - E-commerce Platform",
+      description:
+      "SunteangPhone Store is an online platform dedicated to selling a wide range of electronic devices, including smartphones, laptops, desktops, and headphones. It aims to provide customers with the latest gadgets at competitive prices.",
+      technologies: ["Reactjs", "Tailwindcss", "Vite", "TypeScript", "..."],
+      image: "https://i.pinimg.com/736x/0f/5c/e2/0f5ce2357f728ad209ea41a9c224bfaf.jpg",
+      githubUrl: "https://github.com/Sunteang/PhoneStore-Platform.git",
+      liveUrl: "https://sunteangphonestore.onrender.com",
+    },
+    {
       title: "Innovatech Phnom Penh - University Website",
       description:
       "Innovatech Phnom Penh is a leading university in Cambodia, offering a wide range of academic programs and research opportunities. The website provides information about the university's history, faculties, courses, admissions, and campus life.",
